@@ -47,6 +47,9 @@ export default {
         },
       ],
     },
+    fontFamily: {
+      body: ["Noto Sans KR"],
+    },
   },
   plugins: [],
 };
