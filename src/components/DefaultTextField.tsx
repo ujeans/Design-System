@@ -11,6 +11,7 @@ interface DefaultTextFieldProps {
   onChange: React.ChangeEventHandler<HTMLInputElement>;
   value: string;
   isError: boolean;
+  id: string;
 }
 
 export default function DefaultTextField({
@@ -22,24 +23,29 @@ export default function DefaultTextField({
   onChange,
   value,
   isError,
+  id,
 }: DefaultTextFieldProps) {
   const [isFocused, setIsFocused] = useState(false);
   const borderColor = isFocused
     ? "border-secondary"
     : !value
-    ? "border-mono300"
-    : "border-primary";
+    ? "border-primary"
+    : "border-mono300";
   return (
-    <div>
+    <div className="relative text-field">
       <div
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
         className={`
-      text-primary 
-     border-b 
-     ${borderColor}`}
+          flex
+          items-center
+          justify-between
+         text-primary 
+          border-b 
+          ${borderColor}`}
       >
         <input
+          id={id}
           className="outline-none"
           placeholder={placeholder}
           value={value}
