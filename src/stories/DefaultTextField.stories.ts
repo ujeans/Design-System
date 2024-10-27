@@ -6,7 +6,7 @@ import { fn } from "@storybook/test";
 // Button이 받는 prop를 정의
 const meta: Meta<typeof DefaultTextField> = {
   // 경로
-  title: "TextFields/DefaultTextField",
+  title: "Navigation/DefaultTextField",
   component: DefaultTextField,
   parameters: {
     // 컴포넌트 위치
