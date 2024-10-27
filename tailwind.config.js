@@ -2,6 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    borderRadius: {
+      "primary-button": "5px",
+    },
     colors: {
       primary: " #1d2745",
       secondary: " #1de5d4",
@@ -11,6 +14,7 @@ export default {
       mono200: " #bebebe",
       mono300: " #d6d7d9",
       error: " #d01e1e",
+      social: "#395997",
     },
     fontSize: {
       xs: [
