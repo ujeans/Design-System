@@ -4,7 +4,7 @@ import DefaultTextField from "../components/DefaultTextField";
 import { fn } from "@storybook/test";
 
 // Button이 받는 prop를 정의
-const meta = {
+const meta: Meta<typeof DefaultTextField> = {
   // 경로
   title: "TextFields/DefaultTextField",
   component: DefaultTextField,
