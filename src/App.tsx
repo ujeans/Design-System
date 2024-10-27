@@ -4,13 +4,14 @@ import Label from "./components/Label";
 
 import deleteIcon from "../src/stories/assets/delete.svg";
 import { useState } from "react";
+import TagList from "./components/TagList";
 
 function App() {
   const [isError, setIsError] = useState(false);
 
   return (
     <>
-      <Label htmlFor="email">이메일</Label>
+      {/* <Label htmlFor="email">이메일</Label>
       <DefaultTextField
         id="email"
         placeholder="이메일을 입력하세요"
@@ -35,7 +36,13 @@ function App() {
         onChange={() => {}}
         onIconClick={() => {}}
       />
-      <button onClick={() => setIsError(prev => !prev)}>에러 토글</button>
+      <button onClick={() => setIsError(prev => !prev)}>에러 토글</button> */}
+      <div className="bg-primary w-screen h-screen">
+        <TagList
+          tagList={["All", "React", "TypeScript"]}
+          onTagClick={console.log}
+        />
+      </div>
     </>
   );
 }
