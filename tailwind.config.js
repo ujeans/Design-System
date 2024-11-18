@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     borderRadius: {
-      "primary-button": "5px",
+      "button-default": "5px",
       "tag-button": "17.5px",
     },
     colors: {
